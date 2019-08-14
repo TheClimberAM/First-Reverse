@@ -1,0 +1,22 @@
+using System;
+
+class MainClass {
+  public static string FirstReverse(string str) { 
+   // create empty reverse string
+   string reverse = String.Empty;
+   // iterate through string in reverse and construct reverse
+   for (int i = str.Length - 1; i >= 0; --i)
+   {
+       reverse += str[i];
+   }
+    // return reverse as output
+    return reverse;
+            
+  }
+
+  static void Main() {  
+    // keep this function call here
+    Console.WriteLine(FirstReverse(Console.ReadLine()));
+  } 
+   
+}
